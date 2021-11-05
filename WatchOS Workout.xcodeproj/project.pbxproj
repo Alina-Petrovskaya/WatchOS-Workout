@@ -11,12 +11,15 @@
 		847F0A18273522EE00279B06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847F0A17273522EE00279B06 /* Assets.xcassets */; };
 		847F0A1E273522EF00279B06 /* WatchOS Workout WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 847F0A1D273522EF00279B06 /* WatchOS Workout WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		847F0A23273522EF00279B06 /* WatchOS_WorkoutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F0A22273522EF00279B06 /* WatchOS_WorkoutApp.swift */; };
-		847F0A25273522EF00279B06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F0A24273522EF00279B06 /* ContentView.swift */; };
+		847F0A25273522EF00279B06 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F0A24273522EF00279B06 /* StartView.swift */; };
 		847F0A27273522EF00279B06 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F0A26273522EF00279B06 /* NotificationController.swift */; };
 		847F0A29273522EF00279B06 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F0A28273522EF00279B06 /* NotificationView.swift */; };
 		847F0A2B273522EF00279B06 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F0A2A273522EF00279B06 /* ComplicationController.swift */; };
 		847F0A2D273522F000279B06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847F0A2C273522F000279B06 /* Assets.xcassets */; };
 		847F0A30273522F000279B06 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847F0A2F273522F000279B06 /* Preview Assets.xcassets */; };
+		847F0A492735256300279B06 /* HKWorkoutActivityType+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F0A482735256300279B06 /* HKWorkoutActivityType+Identifiable.swift */; };
+		847F0A4D2735291800279B06 /* SessionPagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F0A4C2735291800279B06 /* SessionPagingView.swift */; };
+		847F0A50273529BD00279B06 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F0A4F273529BD00279B06 /* Tab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +70,7 @@
 		847F0A17273522EE00279B06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		847F0A1D273522EF00279B06 /* WatchOS Workout WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchOS Workout WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		847F0A22273522EF00279B06 /* WatchOS_WorkoutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchOS_WorkoutApp.swift; sourceTree = "<group>"; };
-		847F0A24273522EF00279B06 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		847F0A24273522EF00279B06 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		847F0A26273522EF00279B06 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		847F0A28273522EF00279B06 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		847F0A2A273522EF00279B06 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
@@ -75,6 +78,9 @@
 		847F0A2F273522F000279B06 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		847F0A31273522F000279B06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		847F0A32273522F000279B06 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		847F0A482735256300279B06 /* HKWorkoutActivityType+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKWorkoutActivityType+Identifiable.swift"; sourceTree = "<group>"; };
+		847F0A4C2735291800279B06 /* SessionPagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionPagingView.swift; sourceTree = "<group>"; };
+		847F0A4F273529BD00279B06 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,14 +124,13 @@
 		847F0A21273522EF00279B06 /* WatchOS Workout WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				847F0A22273522EF00279B06 /* WatchOS_WorkoutApp.swift */,
-				847F0A24273522EF00279B06 /* ContentView.swift */,
-				847F0A26273522EF00279B06 /* NotificationController.swift */,
-				847F0A28273522EF00279B06 /* NotificationView.swift */,
-				847F0A2A273522EF00279B06 /* ComplicationController.swift */,
-				847F0A2C273522F000279B06 /* Assets.xcassets */,
-				847F0A31273522F000279B06 /* Info.plist */,
-				847F0A32273522F000279B06 /* PushNotificationPayload.apns */,
+				847F0A4B273528F000279B06 /* Core */,
+				847F0A4A273528E600279B06 /* Modules */,
+				847F0A442735234D00279B06 /* Servises */,
+				847F0A432735233C00279B06 /* Notifications */,
+				847F0A422735232700279B06 /* Launch */,
+				847F0A412735231700279B06 /* Resources */,
+				847F0A402735230900279B06 /* Settings */,
 				847F0A2E273522F000279B06 /* Preview Content */,
 			);
 			path = "WatchOS Workout WatchKit Extension";
@@ -137,6 +142,106 @@
 				847F0A2F273522F000279B06 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		847F0A402735230900279B06 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				847F0A31273522F000279B06 /* Info.plist */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		847F0A412735231700279B06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				847F0A32273522F000279B06 /* PushNotificationPayload.apns */,
+				847F0A2C273522F000279B06 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		847F0A422735232700279B06 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				847F0A22273522EF00279B06 /* WatchOS_WorkoutApp.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		847F0A432735233C00279B06 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				847F0A26273522EF00279B06 /* NotificationController.swift */,
+				847F0A28273522EF00279B06 /* NotificationView.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		847F0A442735234D00279B06 /* Servises */ = {
+			isa = PBXGroup;
+			children = (
+				847F0A452735235500279B06 /* Clock */,
+			);
+			path = Servises;
+			sourceTree = "<group>";
+		};
+		847F0A452735235500279B06 /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				847F0A2A273522EF00279B06 /* ComplicationController.swift */,
+			);
+			path = Clock;
+			sourceTree = "<group>";
+		};
+		847F0A46273524E500279B06 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				847F0A24273522EF00279B06 /* StartView.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		847F0A472735254600279B06 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				847F0A482735256300279B06 /* HKWorkoutActivityType+Identifiable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		847F0A4A273528E600279B06 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				847F0A5127352B1D00279B06 /* MetricsView */,
+				847F0A4E2735297D00279B06 /* SessionPagingView */,
+				847F0A46273524E500279B06 /* Start */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		847F0A4B273528F000279B06 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				847F0A472735254600279B06 /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		847F0A4E2735297D00279B06 /* SessionPagingView */ = {
+			isa = PBXGroup;
+			children = (
+				847F0A4C2735291800279B06 /* SessionPagingView.swift */,
+				847F0A4F273529BD00279B06 /* Tab.swift */,
+			);
+			path = SessionPagingView;
+			sourceTree = "<group>";
+		};
+		847F0A5127352B1D00279B06 /* MetricsView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MetricsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +371,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847F0A4D2735291800279B06 /* SessionPagingView.swift in Sources */,
 				847F0A27273522EF00279B06 /* NotificationController.swift in Sources */,
-				847F0A25273522EF00279B06 /* ContentView.swift in Sources */,
+				847F0A25273522EF00279B06 /* StartView.swift in Sources */,
+				847F0A50273529BD00279B06 /* Tab.swift in Sources */,
 				847F0A2B273522EF00279B06 /* ComplicationController.swift in Sources */,
+				847F0A492735256300279B06 /* HKWorkoutActivityType+Identifiable.swift in Sources */,
 				847F0A23273522EF00279B06 /* WatchOS_WorkoutApp.swift in Sources */,
 				847F0A29273522EF00279B06 /* NotificationView.swift in Sources */,
 			);
@@ -341,6 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -395,6 +504,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -414,7 +524,7 @@
 				DEVELOPMENT_TEAM = 2X76T92HD6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "WatchOS Workout WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "WatchOS Workout WatchKit Extension/Settings/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchOS Workout WatchKit Extension";
 				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -446,7 +556,7 @@
 				DEVELOPMENT_TEAM = 2X76T92HD6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "WatchOS Workout WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "WatchOS Workout WatchKit Extension/Settings/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchOS Workout WatchKit Extension";
 				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
